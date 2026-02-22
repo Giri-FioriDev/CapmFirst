@@ -1,1 +1,0 @@
-This is the first class of CAPM new course, learning the nodejs basics
