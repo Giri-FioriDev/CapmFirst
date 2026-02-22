@@ -1,0 +1,29 @@
+### Read 
+GET http://localhost:4004/odata/v4/demo/Products('P00060')
+
+### Query
+GET http://localhost:4004/odata/v4/demo/Products
+
+### Create 
+POST http://localhost:4004/odata/v4/demo/Products
+Content-Type: application/json
+
+    {
+    "prodId": "P00060",
+    "prodName": "Watter Bottle",
+    "prodDesc": "Hot and cold water bottle",
+    "prodPrice": 550,
+    "prodDiscount": 20,
+    "prodStock": 100
+    }
+
+### Update 
+PATCH http://localhost:4004/odata/v4/demo/Products('P00060')
+Content-Type: application/json
+
+{
+    "prodDiscount" : 55
+}       
+
+### Delete 
+DELETE http://localhost:4004/odata/v4/demo/Products('P00060')
